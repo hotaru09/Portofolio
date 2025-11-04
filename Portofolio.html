@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Albirra Fahmiansyah</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #c7e5ff;
+            color: #333;
+            transition: all 0.4s ease;
+        }
+
+        header {
+            background-color: #ffffffcc;
+            backdrop-filter: blur(10px);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 60px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            color: #005999;
+            font-weight: 600;
+        }
+
+        nav a {
+            color: #005999;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #0099ff;
+        }
+
+        section {
+            padding: 100px 20px;
+            max-width: 1000px;
+            margin: auto;
+            transition: all 0.4s ease;
+        }
+
+        /* HOME */
+        #home {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            min-height: 100vh;
+        }
+
+        #home img {
+            width: 260px;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            transition: transform 0.4s ease;
+        }
+
+        #home img:hover {
+            transform: scale(1.05);
+        }
+
+        #home .intro {
+            max-width: 500px;
+            text-align: center;
+        }
+
+        #home h2 {
+            color: #005999;
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+
+        /* ABOUT */
+        #about {
+            background-color: white;
+            border-radius: 20px;
+            padding: 60px 40px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            animation: fadeIn 1s ease;
+        }
+
+        #about h2 {
+            text-align: center;
+            color: #005999;
+            margin-bottom: 25px;
+        }
+
+        #about h3 {
+            color: #0077cc;
+            margin-top: 25px;
+        }
+
+        #about ul {
+            margin-top: 10px;
+            list-style: none;
+        }
+
+        #about ul li {
+            margin-bottom: 10px;
+        }
+
+        /* CONTACT */
+        #contact {
+            text-align: center;
+        }
+
+        #contact h2 {
+            color: #005999;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background-color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s, background 0.4s;
+        }
+
+        .contact-item:hover {
+            transform: scale(1.05);
+        }
+
+        .contact-item img {
+            width: 30px;
+            height: 30px;
+        }
+
+        footer {
+            background-color: #005999;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+
+        /* Tombol Mode */
+        .mode-toggle {
+            background-color: transparent;
+            border: none;
+            font-size: 22px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .mode-toggle:hover {
+            transform: scale(1.2);
+        }
+
+        /* Dark Mode Styles */
+        body.dark {
+            background-color: #1c1f26;
+            color: #f5f5f5;
+        }
+
+        body.dark header {
+            background-color: #2a2e37cc;
+        }
+
+        body.dark header h1,
+        body.dark nav a {
+            color: #9cc8ff;
+        }
+
+        body.dark nav a:hover {
+            color: #66b2ff;
+        }
+
+        body.dark #about {
+            background-color: #2a2e37;
+            box-shadow: 0 4px 15px rgba(255,255,255,0.1);
+        }
+
+        body.dark #about h2, 
+        body.dark #contact h2, 
+        body.dark #home h2 {
+            color: #9cc8ff;
+        }
+
+        body.dark .contact-item {
+            background-color: #2a2e37;
+        }
+
+        body.dark footer {
+            background-color: #0f141a;
+        }
+
+        /* Animasi */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsif */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                padding: 10px;
+            }
+
+            nav {
+                margin-top: 10px;
+            }
+
+            #home {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            #home img {
+                width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Albirra Fahmiansyah</h1>
+        <div>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About Me</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+        <button class="mode-toggle" id="modeToggle">🌙</button>
+    </header>
+
+    <!-- HOME -->
+    <section id="home">
+        <img src="foto-birra.jpg" alt="Foto Albirra Fahmiansyah">
+        <div class="intro">
+            <h2>Halo, Saya Albirra!</h2>
+            <p>Mahasiswa Universitas Pelita Bangsa yang sedang menekuni bidang Teknik Informatika. 
+            Saya memiliki ketertarikan dalam pemrograman dan jaringan komputer. 
+            Selamat datang di portofolio saya!</p>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Perkenalkan, saya <strong>Albirra Fahmiansyah</strong>, Mahasiswa <strong>Universitas Pelita Bangsa</strong> 
+            yang sedang menekuni bidang <strong>Teknik Informatika</strong>. Saya memiliki keingintahuan besar terhadap 
+            dunia <em>programming</em> dan jaringan komputer.
+        </p>
+
+        <h3>Education</h3>
+        <p>
+            <strong>Universitas Pelita Bangsa</strong> — Sedang menempuh pendidikan di bidang Informatika dengan fokus pada 
+            perancangan web, pengembangan aplikasi, dan teknologi informatika lainnya.
+        </p>
+
+        <h3>Experience</h3>
+        <p>
+            Pembuatan website sederhana untuk profil pribadi menggunakan HTML dan CSS di Visual Studio Code, 
+            dengan desain elegan untuk memperkenalkan diri dan kemampuan saya di bidang teknologi web.
+        </p>
+
+        <h3>Hobby</h3>
+        <ul>
+            <li><strong>🏃 Running:</strong> Antusias dalam berlari, terutama di event-event besar. Berlari membantu saya melepas stres dan merasa bahagia.</li>
+            <li><strong>🎬 Menonton Drama Korea:</strong> Drama Korea menjadi opsi kedua saya untuk melepas penat, alurnya membuat saya merasa ikut masuk ke dalam ceritanya.</li>
+            <li><strong>🍜 Makan:</strong> Mencoba makanan baru membuka pikiran saya tentang cita rasa dan membuat saya senang mengeksplor kuliner lain.</li>
+        </ul>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-info">
+            <div class="contact-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram Logo">
+                <a href="https://www.instagram.com/brrhmy_?" target="_blank">@brrhmy_</a>
+            </div>
+            <div class="contact-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/281/281769.png" alt="Google Logo">
+                <a href="mailto:albirrafahmi@gmail.com">albirrafahmi@gmail.com</a>
+            </div>
+            <div class="contact-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github Logo">
+                <a href="https://github.com/hotaru09" target="_blank">github.com/hotaru09</a>
+            </div>
+            <div class="contact-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Phone Logo">
+                <span>081233641256</span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Albirra Fahmiansyah | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        const toggle = document.getElementById('modeToggle');
+        const body = document.body;
+
+        toggle.addEventListener('click', () => {
+            body.classList.toggle('dark');
+            if (body.classList.contains('dark')) {
+                toggle.textContent = '☀️';
+            } else {
+                toggle.textContent = '🌙';
+            }
+        });
+    </script>
+
+</body>
+</html>
