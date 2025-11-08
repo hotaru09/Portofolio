@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak | Albirra Fahmiansyah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Albirra Fahmiansyah</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portofolio.html">Portofolio</a>
+        <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <button class="mode-toggle" id="modeToggle">🌙</button>
+</header>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+        <label for="name">Nama</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Masukkan email Anda" required>
+
+        <label for="message">Pesan</label>
+        <textarea id="message" rows="5" placeholder="Tulis pesan Anda..." required></textarea>
+
+        <button type="submit" class="btn-submit">Kirim</button>
+    </form>
+
+    <!-- Tambahan opsi kontak langsung -->
+    <div class="contact-info">
+        <h3>Atau hubungi saya lewat:</h3>
+        <div class="contact-item">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
+            <a href="https://www.instagram.com/brrhmy_?" target="_blank">@brrhmy_</a>
+        </div>
+        <div class="contact-item">
+            <img src="https://cdn-icons-png.flaticon.com/512/281/281769.png" alt="Email">
+            <a href="mailto:albirrafahmi@gmail.com">albirrafahmi@gmail.com</a>
+        </div>
+        <div class="contact-item">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+            <a href="https://github.com/hotaru09" target="_blank">github.com/hotaru09</a>
+        </div>
+        <div class="contact-item">
+            <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Phone">
+            <span>081233641256</span>
+        </div>
+    </div>
+</section>
+
+
+<footer>
+    <p>© 2025 Albirra Fahmiansyah | Universitas Pelita Bangsa</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
