@@ -377,3 +377,190 @@ body.dark footer {
         width: 200px;
     }
 }
+
+#biodata {
+    padding: 50px;
+    text-align: center;
+}
+
+.home-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+}
+
+.profile-img {
+    width: 250px;
+    border-radius: 15px;
+}
+
+.right-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 400px;
+}
+
+.intro {
+    text-align: left;
+}
+
+.biodata-container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    line-height: 1.8;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+nav a.active {
+    color: #007bff;
+    font-weight: bold;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+}
+
+/* ARTIKEL */
+
+/* DARK MODE SUPPORT */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode header {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode nav a {
+    color: #ffffff;
+}
+
+body.dark-mode .artikel-container {
+    color: #ffffff;
+}
+
+/* ================= ARTIKEL FIX ================= */
+
+/* ===== ARTIKEL FINAL CLEAN ===== */
+
+#artikel {
+    padding: 120px 20px;
+}
+
+/* GRID RAPI */
+#artikel .artikel-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* CARD */
+#artikel .artikel-card {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+/* IMAGE */
+#artikel .artikel-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+/* HOVER */
+#artikel .artikel-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    #artikel .artikel-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* DARK MODE */
+body.dark #artikel .artikel-card {
+    background-color: #2a2e37;
+    color: #ffffff;
+}
+
+.judul-artikel {
+    text-align: center;
+    color: #0d6efd; /* biru sama kaya My Projects */
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.kesimpulan-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    max-width: 700px;
+    margin: 50px auto 0;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.kesimpulan-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.kesimpulan-card h3 {
+    margin-bottom: 10px;
+    color: #0d6efd;
+}
+
+.kesimpulan-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    max-width: 700px;
+
+    /* INI YANG BIKIN CENTER */
+    grid-column: span 2;
+
+    margin: 50px auto 0;
+    text-align: center;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
