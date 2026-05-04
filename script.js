@@ -1,20 +1,31 @@
+// ===============================
 // DARK MODE TOGGLE
-const toggle = document.getElementById('modeToggle');
-const body = document.body;
+// ===============================
+const toggle = document.getElementById("modeToggle");
 
 if (toggle) {
-    toggle.addEventListener('click', () => {
-        body.classList.toggle('dark');
-        toggle.textContent = body.classList.contains('dark') ? '☀️' : '🌙';
+    toggle.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+
+        // Ganti icon
+        if (document.body.classList.contains("dark-mode")) {
+            toggle.textContent = "☀️";
+        } else {
+            toggle.textContent = "🌙";
+        }
     });
 }
 
-// FORM ALERT
-const form = document.getElementById('contactForm');
+// ===============================
+// FORM CONTACT ALERT
+// ===============================
+const form = document.getElementById("contactForm");
+
 if (form) {
-    form.addEventListener('submit', (e) => {
+    form.addEventListener("submit", function (e) {
         e.preventDefault();
-        alert('Terima kasih, pesan Anda telah terkirim!');
+
+        alert("Terima kasih, pesan Anda telah terkirim!");
         form.reset();
     });
 }

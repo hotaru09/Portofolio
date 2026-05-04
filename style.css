@@ -564,3 +564,170 @@ body.dark #artikel .artikel-card {
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     transition: 0.3s;
 }
+
+/* BACKGROUND */
+body {
+    background: #eaf2f8;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* CONTAINER */
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+/* CARD ARTIKEL */
+.card-artikel {
+    background: white;
+    padding: 30px;
+    margin: 40px 20px;
+    max-width: 900px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+/* HOVER */
+.card-artikel:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+/* KLIK */
+.card-artikel:active {
+    transform: scale(0.98);
+}
+
+/* TEXT */
+.card-artikel h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card-artikel h3 {
+    margin-top: 25px;
+    color: #2c3e50;
+}
+
+.card-artikel p {
+    text-align: justify;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* GAMBAR */
+.gambar-studi {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.gambar-studi img {
+    width: 70%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+/* BACKGROUND */
+body {
+    background: #a9c3d9; /* biru laut soft */
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #ffffff;
+}
+
+/* NAV TENGAH */
+nav {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex: 1;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+nav a.active {
+    color: #007bff;
+}
+
+/* DARK MODE BUTTON */
+.mode-toggle {
+    cursor: pointer;
+    font-size: 20px;
+    background: none;
+    border: none;
+}
+
+/* CONTAINER */
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+/* CARD */
+.card-artikel {
+    background: white;
+    padding: 30px;
+    margin: 40px 20px;
+    max-width: 900px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+/* HOVER */
+.card-artikel:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+/* TEXT */
+.card-artikel h2 {
+    text-align: center;
+}
+
+.card-artikel p {
+    text-align: justify;
+    line-height: 1.8;
+}
+
+/* GAMBAR */
+.gambar-studi {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.gambar-studi img {
+    width: 70%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+/* ===== DARK MODE ===== */
+.dark-mode {
+    background: #1e1e1e;
+    color: white;
+}
+
+.dark-mode header {
+    background: #2c2c2c;
+}
+
+.dark-mode .card-artikel {
+    background: #2c2c2c;
+    color: white;
+}
